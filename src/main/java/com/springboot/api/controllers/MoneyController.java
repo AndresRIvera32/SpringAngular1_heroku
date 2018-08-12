@@ -39,6 +39,11 @@ public class MoneyController {
             return services.convertEuro(dolar, eur);
     } 
     
+    @GetMapping(value= "")
+    public String ejemplo(){
+    	return "";
+    }
+    
     
 }
 
