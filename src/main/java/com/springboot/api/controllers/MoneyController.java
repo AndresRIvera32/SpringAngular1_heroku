@@ -41,7 +41,7 @@ public class MoneyController {
     
     @GetMapping(value= "")
     public String ejemplo(){
-    	return "";
+    	return "algo";
     }
     
     
