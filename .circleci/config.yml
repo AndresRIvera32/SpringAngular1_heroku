@@ -34,4 +34,4 @@ jobs: # a collection of steps
         staging:
             branch: master
             heroku:
-                appname: springappheroku # appname must not include upper-case characters
+                appname: springangularexample # appname must not include upper-case characters
