@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="../js/libs/angular.min.js"></script>
+  <script src="../js/libs/angular-route.js"></script>
+  <script src="../js/libs/appmodule.js"></script>
+  
+  <div class="jumbotron text-center bg-light" >
+			
+		<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="row col-sm-4">
+							<div class="col-sm-3">
+								<h4 class="titulo"> Example</h4>
+							</div>
+							<div class="col-sm-3">
+								<h4 class="titulo"> titulo</h4>
+							</div>
+							<div class="col-sm-3">
+								<h4 class="titulo"> titulo</h4>
+							</div>
+							<div class="col-sm-3">
+								<h4 class="titulo"> titulo</h4>
+							</div>
+				</div>
+				<div class="col-sm-4" ></div>
+		</div>
+  </div>
+  <style>
+  .titulo{
+	font-weight:bolder;
+  }
+  .circulo {
+     width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     background: gray;
+}
+  </style>
+</head>
+<body ng-app="mainAPP">
+
+<br>
+<div class="jumbotron text-center" style="margin-top:3px" >
+
+	  <div class="row">
+		  <div class="col-sm-2" ></div>
+		  <div class="col-sm-2" >
+		       <div class="input-group mb-2"  ng-controller="refresh_control">
+					<div class="input-group-prepend">
+						<span class="input-group-text">€</span>
+					</div>
+                                                                    <input type="number" class="form-control" id="euros" placeholder="EU" >
+                                                                    {{message}}
+			</div>
+				
+		  </div>
+		  <div class="col-sm-4" >
+
+		  </div>
+		  <div class="col-sm-2" >
+				<div class="input-group mb-2">
+					<div class="input-group-prepend">
+						<span class="input-group-text">$</span>
+					</div>
+						<input type="text" class="form-control " id="dolar" placeholder="USD" readonly>
+				</div>
+		  </div>
+
+	  </div>
+	  <br>
+	  <br>
+	  
+	  <div class="row ">
+	  <div class="col-lg-12 " ng-controller= "MoneyCtrl as ctrl">
+			<button ng-click="ctrl.searchChange()" type="button" class="btn btn-lg btn-secondary col-lg-2">CALCULATE</button>
+	  </div>	  
+	  </div>
+</div>
+
+		<div class="jumbotron text-center" style="margin-bottom:0">
+			<div class="container container-fluid">
+					<div class="row col-md-12">
+							<div class="col-md-3"> <p class="titulo" style="font:bold comic-sans;text-align:left">titulo </p></div>
+							<div class="col-md-3"> <p class="titulo" style="font:bold comic-sans;text-align:left">titulo </p></div>
+							<div class="col-md-3"> <p class="titulo" style="font:bold comic-sans;text-align:left">titulo </p></div>
+							<div class="col-md-3"> <p class="titulo" style="font:bold comic-sans;text-align:left">titulo </p></div>
+					</div>
+					<div class="row col-md-12">
+							<div class="col-md-3">
+								<p style="text-align:left">hahahahahahaf asdhlashdflkjfhdsafhsad fjdsah lfhdsafsadlfjhasldjfh </p>
+							</div>
+							<div class="col-md-3"> 
+								<p style="text-align:left">hahahahahahaf asdhlashdflkjfhdsafhsad fjdsah lfhdsafsadlfjhasldjfh </p>
+							</div>
+							<div class="col-md-3"> 
+								<p style="text-align:left">hahahahahahaf asdhlashdflkjfhdsafhsad fjdsah lfhdsafsadlfjhasldjfh </p>
+							</div>
+							<div class="col-md-3">
+										<div class="row">
+											<div class="col-md-4">
+												<p style="text-align:left"> texto</p>
+											</div>
+											<div class="col-md-4">
+												<p style="text-align:left"> texto</p>
+											</div>
+											<div class="col-md-4">
+												<p style="text-align:left"> texto</p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-4">
+												<p style="text-align:left"> texto</p>
+											</div>
+											<div class="col-md-4">
+												<p style="text-align:left"> texto</p>
+											</div>
+											<div class="col-md-4">
+												<p style="text-align:left"> texto</p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-4">
+												<p style="text-align:left"> titulo</p>
+											</div>
+											<div class="col-md-4">
+												<p style="text-align:left"> titulo</p>
+											</div>
+											<div class="col-md-4">
+												<p style="text-align:left"> titulo</p>
+											</div>
+										</div>
+							</div>
+					</div>
+				
+			</div>
+		</div>
+</body>
+</html>
